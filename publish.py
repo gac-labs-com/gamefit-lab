@@ -2,6 +2,7 @@
 """Publish a draft from _drafts/<slug>/ with today's real date, update listings, commit and push."""
 import sys, re, os, subprocess, datetime
 slug = sys.argv[1]
+no_push = '--no-push' in sys.argv
 src = f'_drafts/{slug}/index.html'
 if not os.path.exists(src):
     sys.exit(f'No draft at {src}')
@@ -27,5 +28,6 @@ open('sitemap.xml', 'w').write(sm)
 os.remove(src); os.rmdir(f'_drafts/{slug}')
 subprocess.run(['git', 'add', '-A'], check=True)
 subprocess.run(['git', 'commit', '-q', '-m', f'Publish: {title}'], check=True)
-subprocess.run(['git', 'push', '-q', 'origin', 'main'], check=True)
-print(f'Published {slug} on {date}')
+if not no_push:
+    subprocess.run(['git', 'push', '-q', 'origin', 'main'], check=True)
+print(f'{"Created (not pushed)" if no_push else "Published"} {slug} on {date}')
