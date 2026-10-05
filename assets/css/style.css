@@ -75,3 +75,20 @@ footer.site{border-top:1px solid var(--line);margin-top:80px;padding:32px 0 40px
 footer.site a{color:var(--muted)}
 footer.site p{margin:0 0 8px}
 @media (max-width:560px){nav a{margin-left:14px}.hero{padding:56px 0 40px}}
+
+/* article extras */
+.meta{font-family:var(--mono);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 28px}
+.lead{font-size:1.18rem;color:var(--muted)}
+.callout{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--teal);border-radius:10px;padding:14px 18px;margin:26px 0;color:var(--muted);font-size:.95rem}
+.callout strong{color:var(--text)}
+table{width:100%;border-collapse:collapse;margin:22px 0;font-size:.95rem;background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--mono);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);background:var(--bg2)}
+tr:last-child td{border-bottom:0}
+.postlist{list-style:none;padding:0;margin:0}
+.postlist li{margin:0 0 14px}
+.postlist a.post{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;text-decoration:none;color:var(--text);transition:.2s}
+.postlist a.post:hover{border-color:var(--teal);transform:translateY(-2px)}
+.postlist .t{font-weight:700;font-size:1.1rem;letter-spacing:-.01em}
+.postlist .d{color:var(--muted);font-size:.93rem;margin-top:4px}
+.postlist .m{font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);margin-bottom:6px}
