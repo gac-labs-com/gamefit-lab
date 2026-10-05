@@ -92,3 +92,8 @@ tr:last-child td{border-bottom:0}
 .postlist .t{font-weight:700;font-size:1.1rem;letter-spacing:-.01em}
 .postlist .d{color:var(--muted);font-size:.93rem;margin-top:4px}
 .postlist .m{font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);margin-bottom:6px}
+
+.table-wrap{overflow-x:auto;margin:22px 0;-webkit-overflow-scrolling:touch}
+.table-wrap table{margin:0;min-width:480px}
+.sources{font-size:.92rem}
+.sources a{word-break:break-word}
